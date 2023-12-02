@@ -1,0 +1,25 @@
+name: GuessWho
+version: '${project.version}'
+main: dev.ghosty.guesswho.GuessWho
+api-version: '1.20'
+load: STARTUP
+softdepend: [ ProtocolLib ]
+commands:
+  guesswho:
+    permission: guesswho.command
+    description: Open the GuessWho GUI
+    aliases:
+      - gw
+permissions:
+  guesswho.*:
+    description: All GuessWho Permissions
+    default: op
+    children:
+      - guesswho.start
+      - guesswho.stop
+  guesswho.start:
+    description: Start a Guess Who game
+    default: op
+  guesswho.stop:
+    description: Stop the current Guess Who game
+    default: op

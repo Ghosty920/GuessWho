@@ -1,0 +1,12 @@
+# Is the server on bungee?
+bungee: false
+
+# When the game is finished, go back to this bungee server/this world
+# Put NONE to disable this and depend only on API or idk
+world: "NONE"
+
+# Number of worlds that will be created per map
+worldsPerMap: 1
+
+# Hide the item for ability which is in hand --> REQUIRES ProtocolLib
+hideItem: true
